@@ -39,7 +39,7 @@ function signIn(){
 
     let params = {
         "client_id" : "998811034715-95e7b036slgl0p114tnshhr4r0bb2ln3.apps.googleusercontent.com",
-        "redirect_uri" : "https://shop-wise-project.vercel.app/ShopWise-Projects/shopping.html",
+        "redirect_uri" : "https://shop-wise-projects.vercel.app/ShopWise-Projects/shopping.html",
         "response_type" : "token",
         "scope" : "https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube.readonly",
         "include_granted_scopes" : "true",
@@ -108,7 +108,7 @@ function logout() {
 
     //Redirect User to Homepage
     .then((data) => {
-        location.href = "https://shop-wise-project.vercel.app/ShopWise-Projects/index.html"
+        location.href = "https://shop-wise-projects.vercel.app/ShopWise-Projects/index.html"
     })
 
 }
@@ -122,7 +122,7 @@ document.getElementById('searchButton').addEventListener('click', function() {
 });
 
 function fetchGoogleShoppingData(query) {
-  const apiUrl = `https://shop-wise-project.vercel.app/search?q=${encodeURIComponent(query)}`;
+  const apiUrl = `https://shop-wise-projects.vercel.app/search?q=${encodeURIComponent(query)}`;
 
   fetch(apiUrl)
       .then(response => response.json())
