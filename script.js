@@ -6,7 +6,7 @@ document.getElementById('searchButton').addEventListener('click', function() {
 });
 
 function fetchGoogleShoppingData(query) {
-    const apiUrl = `https://shop-wise-projects.vercel.app/search?q=${encodeURIComponent(query)}`;
+    const apiUrl = `https://shop-wise-project-V1.vercel.app/search?q=${encodeURIComponent(query)}`;
 
     fetch(apiUrl)
         .then(response => response.json())
