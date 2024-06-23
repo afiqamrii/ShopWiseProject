@@ -46,5 +46,5 @@ app.get('/search', async (req, res) => {
 
 // Start the server
 app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+    console.log(`Server is running on https://shop-wise-project.vercel.app/ShopWise-Projects:${PORT}`);
 });
